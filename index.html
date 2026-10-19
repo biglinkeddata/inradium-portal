@@ -99,7 +99,7 @@ body::before{content:""; position:fixed; inset:0 0 auto; height:env(safe-area-in
 @media (max-aspect-ratio: 11/8){ .hero video.landscape{display:none} .hero .poster img{object-position:center center} }
 @media (max-aspect-ratio: 3/4){ .hero video.portrait{display:block; object-position:center 60%} .hero .poster img{object-position:center 60%} }
 .hero .poster{z-index:0} .hero video{z-index:1}
-.hero::after{content:""; position:absolute; inset:0; z-index:2; background:linear-gradient(180deg, rgba(22,22,22,.35) 0%, rgba(22,22,22,0) 18%, rgba(22,22,22,0) 68%, rgba(22,22,22,.5) 100%)}
+.hero::after{content:""; position:absolute; inset:0; z-index:2; background:linear-gradient(180deg, rgba(22,22,22,.6) 0%, rgba(22,22,22,.3) 12%, rgba(22,22,22,0) 26%, rgba(22,22,22,0) 68%, rgba(22,22,22,.5) 100%)}
 .hero .wrap{position:relative; z-index:3; padding:calc(110px + env(safe-area-inset-top,0px)) 0 48px}
 .hero h1{font-size:clamp(28px, 4vw, 44px); max-width:14ch; text-shadow:0 1px 2px rgba(0,0,0,.6), 0 4px 24px rgba(0,0,0,.55)}
 .hero h1 .accent{color:#4FA8E6}
@@ -111,7 +111,7 @@ body::before{content:""; position:fixed; inset:0 0 auto; height:env(safe-area-in
   .hero .actions{display:none}
   .hero h1{font-size:clamp(24px, 7vw, 32px); max-width:12ch; text-align:left; text-shadow:0 1px 2px rgba(0,0,0,.6), 0 4px 24px rgba(0,0,0,.55)}
   .hero p{display:none}
-  .hero::after{background:linear-gradient(180deg, rgba(22,22,22,.35) 0%, rgba(22,22,22,0) 18%, rgba(22,22,22,0) 70%, rgba(22,22,22,.45) 100%)}
+  .hero::after{background:linear-gradient(180deg, rgba(22,22,22,.6) 0%, rgba(22,22,22,.3) 12%, rgba(22,22,22,0) 26%, rgba(22,22,22,0) 70%, rgba(22,22,22,.45) 100%)}
 }
 .scroll-hint{position:absolute; left:50%; bottom:calc(18px + env(safe-area-inset-bottom,0px)); z-index:3; transform:translateX(-50%); width:2px; height:34px; background:linear-gradient(var(--mustard), transparent); animation:hint 1.8s ease-in-out infinite; display:none}
 @media (min-width:821px){ .scroll-hint{display:block} }
